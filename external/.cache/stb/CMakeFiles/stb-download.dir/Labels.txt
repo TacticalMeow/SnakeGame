@@ -1,0 +1,14 @@
+# Target labels
+ stb-download
+# Source files and their labels
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/stb-download
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/810fe08c6846e0cf92816a9a77262d34/stb-download.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/89ee1508801cf829a806562e60700d9d/stb-download-complete.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-build.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-configure.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-download.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-install.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-mkdir.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-patch.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-test.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-update.rule

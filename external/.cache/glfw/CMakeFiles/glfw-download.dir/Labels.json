@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/glfw-download"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/be46acb0ac2b91aca236fd6f24e1f844/glfw-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/f7e599433d5ed0654566512b0450c66c/glfw-download-complete.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-build.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-configure.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-install.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-mkdir.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-patch.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-test.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/cbc48733c36d714ac4c526e81fc44b28/glfw-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-download"
+		],
+		"name" : "glfw-download"
+	}
+}

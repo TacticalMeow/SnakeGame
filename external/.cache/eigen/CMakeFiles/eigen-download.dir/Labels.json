@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/eigen-download"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/2bdb106c9d1a32ba6e7bb8466fc35efa/eigen-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/cb6f3b1c255a3b37911a72d9f158a52d/eigen-download-complete.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-build.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-configure.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-install.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-mkdir.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-patch.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-test.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/eigen/CMakeFiles/5db444d68c917bbade94f3d60b097000/eigen-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"eigen-download"
+		],
+		"name" : "eigen-download"
+	}
+}

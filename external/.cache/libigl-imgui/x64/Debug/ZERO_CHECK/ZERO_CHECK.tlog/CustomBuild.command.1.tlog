@@ -1,0 +1,10 @@
+^D:\REPOS\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\73C3B8D59D219FC59CA887E44ED1E3DE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui -BD:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

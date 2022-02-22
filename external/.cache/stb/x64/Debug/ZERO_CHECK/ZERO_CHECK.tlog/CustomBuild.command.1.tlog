@@ -1,0 +1,10 @@
+^D:\REPOS\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\810FE08C6846E0CF92816A9A77262D34\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/repos/EngineForAnimationCourse-master/external/.cache/stb -BD:/repos/EngineForAnimationCourse-master/external/.cache/stb --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/repos/EngineForAnimationCourse-master/external/.cache/stb/stb-download.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

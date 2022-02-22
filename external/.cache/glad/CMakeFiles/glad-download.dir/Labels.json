@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/glad-download"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/8783599f5352f6eb6efcd1ca4b79d3e1/glad-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/d2c1aa030bd3deb7fe95836ecc6182e6/glad-download-complete.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-build.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-configure.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-install.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-mkdir.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-patch.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-test.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glad-download"
+		],
+		"name" : "glad-download"
+	}
+}

@@ -1,0 +1,3 @@
+D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/glfw-download.dir
+D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/ALL_BUILD.dir
+D:/repos/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/ZERO_CHECK.dir

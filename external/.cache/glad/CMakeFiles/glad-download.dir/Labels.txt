@@ -1,0 +1,14 @@
+# Target labels
+ glad-download
+# Source files and their labels
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/glad-download
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/8783599f5352f6eb6efcd1ca4b79d3e1/glad-download.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/d2c1aa030bd3deb7fe95836ecc6182e6/glad-download-complete.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-build.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-configure.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-download.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-install.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-mkdir.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-patch.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-test.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/2783c31758b12c6cff3e61640c0aafdb/glad-download-update.rule

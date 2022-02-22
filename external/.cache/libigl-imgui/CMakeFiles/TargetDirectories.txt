@@ -1,0 +1,3 @@
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/libigl-imgui-download.dir
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ALL_BUILD.dir
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ZERO_CHECK.dir

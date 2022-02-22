@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/stb-download"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/810fe08c6846e0cf92816a9a77262d34/stb-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/89ee1508801cf829a806562e60700d9d/stb-download-complete.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-build.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-configure.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-download.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-install.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-mkdir.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-patch.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-test.rule"
+		},
+		{
+			"file" : "D:/repos/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/20f594245703b84878e820954855abb4/stb-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"stb-download"
+		],
+		"name" : "stb-download"
+	}
+}

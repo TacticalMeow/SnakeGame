@@ -1,0 +1,5 @@
+method=git
+repository=https://github.com/eigenteam/eigen-git-mirror.git
+remote=origin
+source_dir=D:/repos/EngineForAnimationCourse-master/cmake/../external/eigen
+

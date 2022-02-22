@@ -1,0 +1,14 @@
+# Target labels
+ libigl-imgui-download
+# Source files and their labels
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/libigl-imgui-download
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/73c3b8d59d219fc59ca887e44ed1e3de/libigl-imgui-download.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/5e777fb1c77c729f85c7790bf3afea34/libigl-imgui-download-complete.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-build.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-configure.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-download.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-install.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-mkdir.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-patch.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-test.rule
+D:/repos/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/ae88e21622b50e7bc0adf2358080f7d9/libigl-imgui-download-update.rule

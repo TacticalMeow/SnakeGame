@@ -88,7 +88,7 @@ public:
 	void move_game_objects();
 	void init_rng();
 
-
+	int GetTimeLeft();
 	bool load_game_objects(); //loads the items object file into memory
 	bool load_box_object();
 	int create_viewer_data_from_object_data(std::string obj_name);

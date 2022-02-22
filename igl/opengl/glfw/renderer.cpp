@@ -164,7 +164,7 @@ IGL_INLINE void Renderer::init(igl::opengl::glfw::Viewer* viewer,int coresNum, i
 			static bool no_titlebar = false;
 			static bool no_scrollbar = true;
 			static bool no_menu = true;
-			static bool no_move = false;
+			static bool no_move = true;
 			static bool no_resize = false;
 			static bool no_collapse = true;
 			static bool no_close = false;
@@ -184,27 +184,47 @@ IGL_INLINE void Renderer::init(igl::opengl::glfw::Viewer* viewer,int coresNum, i
 			if (no_bring_to_front)  window_flags |= ImGuiWindowFlags_NoBringToFrontOnFocus;
 			no_move = true;
 			no_resize = true;
-			ImGui::Begin(
-				"Snake Game Menu", p_open,
-				window_flags
-			);
-			if (ImGui::Button("Start Level", ImVec2(100, 100)))
+			if (!((SandBox*)scn)->game_started)
 			{
-				if (!((SandBox*)scn)->game_started)
+				ImGui::SetNextWindowPos(ImVec2(550, 200));
+				ImGui::Begin(
+					"Snake Game Menu", p_open,
+					window_flags
+				);
+				ImGui::Text("Current Level : %d", ((SandBox*)scn)->current_level);
+				if (ImGui::Button("Start Level", ImVec2(100, 100)))
 				{
-					printf("starting current level : %d \n" , ((SandBox*)scn)->current_level);
-					((SandBox*)scn)->Start_Level();
+					if (!((SandBox*)scn)->game_started)
+					{
+						printf("starting current level : %d \n", ((SandBox*)scn)->current_level);
+						((SandBox*)scn)->Start_Level();
+					}
+					else
+						printf("level already started\n");
 				}
-				else
-					printf("level already started\n");
-			}
-			//ImGui::TextColored()
-			if (ImGui::Button("Change POV", ImVec2(100, 100)))
-			{
-				((SandBox*)scn)->is_first_person_view = !((SandBox*)scn)->is_first_person_view;
-			}
 
-			ImGui::End();
+
+				if (ImGui::Button("Change POV", ImVec2(100, 100)))
+				{
+					((SandBox*)scn)->is_first_person_view = !((SandBox*)scn)->is_first_person_view;
+				}
+				ImGui::End();
+			}
+			else
+			{
+				//ImGui::SetCursorPos(ImVec2(500, 500));
+				ImGui::SetNextWindowPos(ImVec2(550,0));
+				ImGui::Begin("Game Stats", p_open,
+					window_flags);
+				std::string score = std::string("Total Score : ");
+				score.append(std::to_string( (int)((SandBox*)scn)->total_game_points));
+				score.append(std::string("   "));
+				ImGui::Text(score.c_str());
+				std::string time_left = std::string("Time Left : ");
+				time_left.append(std::to_string(((SandBox*)scn)->GetTimeLeft()));
+				ImGui::Text(time_left.c_str());
+				ImGui::End();
+			}
 
 		};
 	
@@ -453,9 +473,10 @@ IGL_INLINE void Renderer::resize(GLFWwindow* window,int w, int h)
 	/// </summary>
 	void Renderer::first_person_view() 
 	{
-		core().camera_eye = scn->GetSnakeRotation()*scn->pov_original_location;
+		core().camera_eye = scn->GetSnakeRotation()*(scn->pov_original_location + Eigen::Vector3f(0,1.0f,-4.5f));
 		core().camera_center =  (core().camera_eye + scn->GetSnakeRotation() * Eigen::Vector3f(0,0,1));
 		core().camera_translation = -1.0 * scn->Get_FPView();
+		core().camera_up = Vector3f(0, 1.0f, 0);
 		//printf("camera center: (%f,%f,%f) \n",
 		//	core().camera_center.x(), core().camera_center.y(), core().camera_center.z());
 	}
@@ -465,8 +486,9 @@ IGL_INLINE void Renderer::resize(GLFWwindow* window,int w, int h)
 	/// </summary>
 	void Renderer::world_view()
 	{
-		core().camera_eye = Vector3f(0, 7, -6);
-		core().camera_center = (core().camera_eye- Vector3f(0, 1.0f, 0.0f)).normalized();
+		core().camera_eye = Vector3f(0, 10, -12);
+		core().camera_center = Vector3f(0, -1.0f, 0.0f);
+		core().camera_up = Vector3f(0, 0, 1.0f);
 	}
 
 	//IGL_INLINE void Viewer::select_hovered_core()

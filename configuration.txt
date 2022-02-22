@@ -1,0 +1,2 @@
+data/snakeuv.obj
+data/planexy.off

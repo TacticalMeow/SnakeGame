@@ -28,18 +28,17 @@
 #include <time.h>
 #include <Windows.h>
 #include <playsoundapi.h>
-#include <igl/copyleft/tetgen/tetrahedralize.h>
 #include <igl/writeOFF.h>
 using namespace Eigen;
 using namespace std;
 
-#define DEFAULT_MOVING_SPEED 0.06f
+#define DEFAULT_MOVING_SPEED 0.1f
 #define DEFAULT_OBJECT_MOVING_SPEED 0.02f
 #define MAXIMUM_DECIMATION_FACES 100
-#define MAX_GAME_OBJECTS 3
-#define MAX_LEVEL_TIME 10
-#define BASE_SCORE_TO_WIN 1000
-#define ROTATION_RADIUS 1.0f
+#define MAX_GAME_OBJECTS 10
+#define MAX_LEVEL_TIME 100
+#define BASE_SCORE_TO_WIN 500
+#define ROTATION_RADIUS 2.0f
 
 
 
@@ -108,7 +107,7 @@ void SandBox::Init(const std::string &config)
 		is_cube_inplace = true;
 		load_game_objects();
 		nameFileout.close();
-		//load_sound();
+		load_sound();
 	}
 }
 
@@ -377,13 +376,13 @@ std::pair<int, int> SandBox::get_random_point()
 void SandBox::Start_Level()
 {
 	timer = std::chrono::steady_clock::now();
-	snake_moving_speed = (double)current_level * DEFAULT_MOVING_SPEED;
+	snake_moving_speed = ((double)current_level * DEFAULT_MOVING_SPEED)/(1.1* (double)current_level);
 	is_snake_moving = true;
 	game_started = true;
 	total_game_points = 0;
 	object_move_speed = (double)current_level * DEFAULT_OBJECT_MOVING_SPEED;
 	spawn_time = 3.0f;
-	score_to_finish_level = current_level * 500;
+	score_to_finish_level = current_level * BASE_SCORE_TO_WIN;
 	last_time_spawned = 0;
 	animation_current_time = 0.0;
 	started_turning_animation = false;
@@ -431,7 +430,6 @@ bool SandBox::load_box_object()
 							);
 	return true;
 }
-
 
 int SandBox::create_viewer_data_from_object_data(std::string obj_name)
 {
@@ -510,7 +508,7 @@ bool SandBox::end_current_level(bool reason) //false = time ,true = score reache
 
 void SandBox::spawn_new_object()
 {
-	if (this->total_game_objects < MAX_GAME_OBJECTS)
+	if (this->total_game_objects < MAX_GAME_OBJECTS/current_level)
 	{
 		int object_index=create_viewer_data_from_object_data("cube");
 		std::pair<int,int> starting_point = get_random_point();
@@ -523,8 +521,6 @@ void SandBox::spawn_new_object()
 		}
 	}
 }
-
-
 
 Vector3f SandBox::GetFPdirection()
 {
@@ -577,16 +573,16 @@ SandBox::~SandBox()
 void SandBox::continue_turning_animation()
 {
 	animation_current_time += 1.0;
-	if (animation_current_time <= 60.5)
+	if (animation_current_time <= 30.5)
 	{
-		double t = animation_current_time / 60.0;
+		double t = animation_current_time / 30.0;
 		Eigen::Vector3d next_point=bez_curve.P1 + (1.0 - t)* (1.0 - t) * (bez_curve.P0 - bez_curve.P1) +  t * t * (bez_curve.P2 - bez_curve.P1);
-		Eigen::Vector3d trans_amount = next_point-(data_list[pov_mesh_index].MakeTransd() * Eigen::Vector4d(0, 0, 0, 1)).head<3>();
+		Eigen::Vector3d trans_amount = next_point - (data_list[pov_mesh_index].MakeTransd() * Eigen::Vector4d(0, 0, 0, 1)).head<3>();
 		data_list[pov_mesh_index].MyTranslate(trans_amount, true);
 		if(rotation_animation_direction)
-			data_list[pov_mesh_index].MyRotate(Eigen::Vector3d(0, 1, 0), (0.5*M_PI)/60.0);
+			data_list[pov_mesh_index].MyRotate(Eigen::Vector3d(0, 1, 0), (0.5*M_PI)/30.0);
 		else
-			data_list[pov_mesh_index].MyRotate(Eigen::Vector3d(0, 1, 0), -1.0*(0.5 * M_PI) / 60.0);
+			data_list[pov_mesh_index].MyRotate(Eigen::Vector3d(0, 1, 0), -1.0*(0.5 * M_PI) / 30.0);
 	}
 	else
 	{
@@ -741,7 +737,7 @@ bool SandBox::check_end_game()
 {
 	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
 	long elapsed = std::chrono::duration_cast<std::chrono::seconds> (end - timer).count();
-	if (elapsed > MAX_LEVEL_TIME)
+	if (elapsed > MAX_LEVEL_TIME/current_level)
 	{
 		return true;
 	}
@@ -776,3 +772,9 @@ bool SandBox::remove_game_object(const int mesh_idx)
 		return false;
 }
 
+int SandBox::GetTimeLeft()
+{
+	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+	long elapsed = std::chrono::duration_cast<std::chrono::seconds> (end - timer).count();
+	return (MAX_LEVEL_TIME / current_level) - elapsed;
+}
